@@ -2011,6 +2011,7 @@ footer {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(60px,1fr));
                 grid-column-gap: 2px;
+                grid-row-gap: 2px;
                 padding: 2px;
             }
             .gcontainer{
