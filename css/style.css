@@ -173,6 +173,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
     grid-column-gap: 2px;
+    grid-row-gap: 2px;
     padding: 2px;
 }
 .gallery img{
@@ -181,7 +182,7 @@ body {
 .gcontainer{
     text-align: center;
     background-color:  rgb(218, 218, 218);
-    color: #FFF2F2;
+    color: #1a1a1a;
     letter-spacing: .2em;
     margin-top: 1em;
 }
@@ -2070,4 +2071,16 @@ footer {
             color: #ffffff;
         }
         /* End footer */
+}
+
+@media (max-width:246px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(58px,1fr));
+        grid-column-gap: 2px;
+        padding: 2px;
+    }
+    .gcontainer{
+        font-size: 8px;
+    }
 }
