@@ -2072,15 +2072,3 @@ footer {
         }
         /* End footer */
 }
-
-@media (max-width:246px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(58px,1fr));
-        grid-column-gap: 2px;
-        padding: 2px;
-    }
-    .gcontainer{
-        font-size: 8px;
-    }
-}
