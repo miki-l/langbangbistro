@@ -29,8 +29,9 @@ function myFunction() {
 var mng = document.getElementById("mngf");
 var abt = document.getElementById("about");
 var anmt = document.getElementById("anmtabt");
+var nvabt = document.getElementById("nvabt");
 
-mng.onclick = function(){
+(nvabt,mng).onclick = function(){
   if(abt.className == "open"){
     abt.className = "";
     anmt.setAttribute("style","opacity: 0");
@@ -38,4 +39,12 @@ mng.onclick = function(){
     abt.className = "open";
     anmt.setAttribute("style","opacity: 1"); 
   }
+};
+
+var navop = document.getElementById("navop");
+var nv = document.getElementById("nv");
+
+navop.onclick = function(){
+  nv.classList.toggle('navopen');
+  navop.classList.toggle('toggle');
 };
