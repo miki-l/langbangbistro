@@ -11,8 +11,6 @@ body {
 
 /* start header */
 #navbar {  
-   display: flex;
-   justify-content: space-around;
    background-color: none !important;
    width: 100%;
    z-index: 1;
@@ -129,16 +127,28 @@ body {
     text-align: center;
     color: rgb(26, 26, 26);
 }
-.open {
-    background-color: rgb(230, 230, 230);
-    width: 100%;
-    height: 31rem ;
-    margin-bottom: 1.8rem;
-    text-align: center;
-}
-.aboutxt {
-    padding: 12% 10%;
+#about {
+    height: 0px;
+    width: 100% !important;
+    overflow: hidden;
+    font-size: 1rem;
+    padding: 5% 20%;
     letter-spacing: .8px;
+
+  -webkit-transition: height 0.8s;
+  -moz-transition: height 0.8s;
+  transition: height 0.8s;
+}
+.open {
+  background-color: rgb(219, 219, 219);
+  margin-top: 1rem;
+  text-align: center;
+  
+  height: 31em !important;
+  
+  -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  transition: height 2s;
 }
 
 
@@ -237,23 +247,30 @@ footer {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        margin: 0% 10% ;
+    }
     
     .logo{
         position: absolute;
+        left: 8rem;
         background-image: url("../image/logopixel2.png");
         width: 43px;
         height: 46px;
     }
-  #navbar {  
-      display: flex;
-      justify-content: center;
+  #navbar { 
       width: 100%;
       height: 46px;
    }
    .nav {
-      display: flex;
-      justify-content: space-around;
-      width: 50rem;
+       position: absolute;
+       right: 7.6rem;
+      width: 10rem;
   }
   .nav a {
       margin-top: .4rem;
@@ -296,35 +313,7 @@ footer {
       font-size: large;
   }
   
-  /* intro */
-  .greeding {
-      position: absolute;
-      margin: 0% 39% ;
-      font-size: 1rem;
-      color: #FFF2F2;
-      font-style:italic;
-      letter-spacing: 0.4rem;
-      text-shadow:1px 2px 2px #000 ;
-  }
-  .title {
-      position: absolute;
-      margin: 80% 26% 20%;
-      font-size: .6rem;
-      color: #FFF2F2;
-      font-style:italic;
-      letter-spacing: 0.4rem;
-  }
-
-  .cake{
-      background-image: url("../image/28.jpg");
-      background-position: center;
-      background-size: 60rem;
-      overflow: hidden;
-      border: 2px solid #000;
-      width: 100%;
-      height: 62.6rem;
-  }
-  /* end intro */
+  
 
   /* start homepage */
   .content {
@@ -343,7 +332,7 @@ footer {
 .menuimg {
     background-image: url("../image/10.jpg");
         background-position: top;
-        background-size: 27rem;
+        background-size: 30rem;
         overflow: hidden;
         width: 100%;
         height: 100%;
@@ -382,37 +371,6 @@ footer {
       color: rgb(255, 255, 255);
       font-size: 1.2rem;
   }
-  
-
-  .open {
-      background-color: rgb(219, 219, 219);
-      width: 100%;
-      margin-top: 1.4rem;
-      text-align: center;
-  }
-  .open {
-    width: 100%;
-    height: 20rem !important;
-    -webkit-animation: animateThis .4s forwards;
-    -webkit-animation-fill-mode: backwards;
-}
-
-@-webkit-keyframes animateThis {
-    0% {
-        width: 0px;
-        height: 0px;
-    }
-    100% {
-        width: 100%;
-        height: 20rem;
-
-    }
-}
-  .aboutxt {
-      font-size: 1rem;
-      padding: 5% 20%;
-      letter-spacing: .8px;
-  }
 
   
   .notice {
@@ -423,55 +381,13 @@ footer {
       font-size: 1rem;
   }
 
-        /* --------------------------------FORM PAGE */
-    
-        .form{
-            display:grid;
-            grid-template-columns: 1fr 1fr ;
-            margin-top: 2rem;
-        }
-
-            .formcontainer {
-            background-color: rgb(218, 218, 218);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            }
-            .formcontainer h4 {
-            color: rgb(22, 22, 22);
-            font-size: 1rem;
-            text-align: center;
-            margin: 1.6rem 0;
-            letter-spacing: 1.8px;
-            }
-            label {
-            color: rgb(22, 22, 22);
-            text-align: center;
-            font-size: .8rem;
-            }
-            input {
-            margin: 10px auto;
-            width: 360px;
-            height: 2rem;
-            }
-            .btn {
-            display: flex;
-            justify-content: center;
-            background:rgb(245, 164, 71);
-            border: none;
-            color: aliceblue;
-            letter-spacing: 1px;
-            font-weight: bold;
-            width: 100%;
-            height: 2.8rem;
-            font-size: 1em;
-            cursor: pointer;
-            }
-            .text {
-            color: rgb(207, 0, 0);
-            }
-
-/* --------------------------------END FORM PAGE */
+  #about {
+    padding: 40px 30px;
+}
+.open {
+    height: 16rem !important;
+    margin-bottom: 1rem;
+}
 
 #cont {
   margin: 2rem 0 0;
@@ -539,20 +455,19 @@ footer {
   @media (min-width: 992px) and (max-width: 1199px) {
       .logo{
           position: absolute;
+          left:10px;
           background-image: url("../image/logopixel2.png");
           width: 43px;
           height: 46px;
       }
     #navbar {  
-        display: flex;
-        justify-content: center;
         width: 100%;
         height: 47px;
      }
      .nav {
-        display: flex;
-        justify-content: space-around;
-        width: 50rem;
+         position: absolute;
+         right: 0px;
+        width: 14rem;
     }
     .nav a {
         margin-top: .2rem;
@@ -595,35 +510,7 @@ footer {
         font-size: large;
     }
     
-    /* intro */
-    .greeding {
-        position: absolute;
-        margin: 0% 39% ;
-        font-size: 1rem;
-        color: #FFF2F2;
-        font-style:italic;
-        letter-spacing: 0.4rem;
-        text-shadow:1px 2px 2px #000 ;
-    }
-    .title {
-        position: absolute;
-        margin: 80% 26% 20%;
-        font-size: .6rem;
-        color: #FFF2F2;
-        font-style:italic;
-        letter-spacing: 0.4rem;
-    }
-
-    .cake{
-        background-image: url("../image/28.jpg");
-        background-position: center;
-        background-size: 60rem;
-        overflow: hidden;
-        border: 2px solid #000;
-        width: 100%;
-        height: 62.6rem;
-    }
-    /* end intro */
+   
 
     /* start homepage */
     .content {
@@ -685,39 +572,6 @@ footer {
     #map-tile{
         height: 400px;
     }
-
-    .open {
-        background-color: rgb(230, 230, 230);
-        width: 100%;
-        height: 40rem !important;
-        margin-top: 1rem;
-        text-align: center;
-    }
-    .open {
-        width: 100%;
-        height: 40rem !important;
-        -webkit-animation: animateThis .4s forwards;
-        -webkit-animation-fill-mode: backwards;
-    }
-    
-    @-webkit-keyframes animateThis {
-        0% {
-            width: 0px;
-            height: 0px;
-        }
-        100% {
-            width: 100%;
-            height: 40rem;
-    
-        }
-    }
-
-    .aboutxt {
-        background-color: rgb(219, 219, 219);
-        font-size: 2rem;
-        padding: 5% 10%;
-        letter-spacing: .8px;
-    }
     
     .notice {
         background-color: rgb(219, 219, 219);
@@ -727,50 +581,14 @@ footer {
         font-size: 2rem;
     }
 
-          /* --------------------------------FORM PAGE */
-          .form{
-            display:grid;
-            grid-template-columns: repeat(auto-fit,50%) ;
-            margin-top: 2rem;
-        }
-.formcontainer {
-    background-color: rgb(218, 218, 218);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .formcontainer h4 {
-    color: rgb(22, 22, 22);
-    font-size: 2rem;
-    text-align: center;
-    margin: 1rem 0;
-    letter-spacing: 1.8px;
-  }
-  label {
-    color: rgb(22, 22, 22);
-    text-align: center;
-    font-size: 1.8rem;
-  }
-  input {
-    margin: 10px auto;
-    width: 360px;
-    height: 2.4rem;
-  }
-  .btn {
-    display: flex;
-    justify-content: center;
-    background:rgb(245, 164, 71);
-    border: none;
-    color: aliceblue;
-    letter-spacing: 1px;
-    font-weight: bold;
-    width: 100%;
-    font-size: 1.6em;
-  }
-  .text {
-    color: rgb(207, 0, 0);
-  }
-  /* --------------------------------END FORM PAGE */
+    #about {
+        padding: 4px 30px;
+        font-size: 1.3em;
+    }
+    .open {
+        height: 16rem !important;
+        margin-bottom: 1rem;
+    }
   
   #cont {
     margin: 2rem 0 0;
@@ -837,6 +655,7 @@ footer {
   @media (min-width: 768px) and (max-width: 991px) {
     .logo{
         position: absolute;
+        left: 10px;
         background-image: url("../image/logopixel2.png");
         width: 43px;
         height: 46px;
@@ -845,7 +664,9 @@ footer {
         height: 47px;
     }
       .nav {
-          width: 50rem;
+          position: absolute;
+          right: 0px;
+          width: 10rem;
           margin: 10px;
       }
       .nav a{
@@ -887,35 +708,7 @@ footer {
         font-size: large;
     }
     
-    /* intro */
-    .greeding {
-        position: absolute;
-        margin: 0% 39% ;
-        font-size: 1rem;
-        color: #FFF2F2;
-        font-style:italic;
-        letter-spacing: 0.4rem;
-        text-shadow:1px 2px 2px #000 ;
-    }
-    .title {
-        position: absolute;
-        margin: 80% 26% 20%;
-        font-size: .6rem;
-        color: #FFF2F2;
-        font-style:italic;
-        letter-spacing: 0.4rem;
-    }
-
-    .cake{
-        background-image: url("../image/28.jpg");
-        background-position: center;
-        background-size: 38rem;
-        overflow: hidden;
-        border: 2px solid #000;
-        width: 100%;
-        height: 46.6rem;
-    }
-    /* end intro */
+   
 
     /* start homepage */
     .content {
@@ -972,39 +765,6 @@ footer {
         font-size: 1.2rem;
     }
     
-
-    .open {
-        background-color: rgb(219, 219, 219);
-        width: 100%;
-        height: 24rem !important;
-        margin-bottom: 1.8rem;
-        text-align: center;
-    }
-    .open {
-        width: 100%;
-        height: 24rem !important;
-        -webkit-animation: animateThis .4s forwards;
-        -webkit-animation-fill-mode: backwards;
-    }
-    
-    @-webkit-keyframes animateThis {
-        0% {
-            width: 0px;
-            height: 0px;
-        }
-        100% {
-            width: 100%;
-            height: 24rem;
-    
-        }
-    }
-
-    .aboutxt {
-        font-size: 1.2rem;
-        padding: 5% 10%;
-        letter-spacing: .8px;
-        z-index: 0;
-    }
     
     .notice {
         background-color: rgb(219, 219, 219);
@@ -1014,50 +774,14 @@ footer {
         color: rgb(26, 26, 26);
     }
 
-       /* --------------------------------FORM PAGE */
-       .form{
-        display:grid;
-        grid-template-columns: repeat(auto-fit,50%) ;
-        margin-top: 2rem;
+    #about {
+        padding: 4px 30px;
     }
-       
-.formcontainer {
-    background-color: rgb(218, 218, 218);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .formcontainer h4 {
-    color: rgb(22, 22, 22);
-    font-size: 1.6rem;
-    text-align: center;
-    margin: 1rem 0;
-    letter-spacing: 1.8px;
-  }
-  label {
-    color: rgb(22, 22, 22);
-    text-align: center;
-    font-size: 1.4rem;
-  }
-  input {
-    margin: 10px auto;
-    width: 360px;
-  }
-  .btn {
-    display: flex;
-    justify-content: center;
-    background:rgb(245, 164, 71);
-    border: none;
-    color: aliceblue;
-    letter-spacing: 1px;
-    font-weight: bold;
-    width: 100%;
-    font-size: 1.4em;
-  }
-  .text {
-    color: rgb(207, 0, 0);
-  }
-  /* --------------------------------END FORM PAGE */
+    .open {
+        height: 16rem !important;
+        margin-bottom: 1rem;
+    }  
+
   
   #cont {
     margin: 2rem 0 0;
@@ -1125,6 +849,7 @@ footer {
 
     .logo{
         position: absolute;
+        left: 34px;
         background-image: url("../image/logopixel2.png");
         width: 43px;
         height: 46px;
@@ -1133,7 +858,9 @@ footer {
         height: 47px;
     }
       .nav {
-          width: 50rem;
+          position: absolute;
+          right: 10px;
+          width: 10rem;
           margin: 10px;
       }
       .nav a{
@@ -1259,77 +986,16 @@ footer {
         color: rgb(255, 255, 255);
         font-size: 1.2rem;
     }
-
-    .open {
-        background-color: rgb(219, 219, 219);
-        width: 100%;
-        height: 24rem !important;
-        margin-bottom: 1.8rem;
-        text-align: center;
-    }
-    .open {
-        width: 100%;
-        height: 24rem !important;
-        -webkit-animation: animateThis .4s forwards;
-        -webkit-animation-fill-mode: backwards;
-    }
-    
-    @-webkit-keyframes animateThis {
-        0% {
-            width: 0px;
-            height: 0px;
-        }
-        100% {
-            width: 100%;
-            height: 24rem;
-    
-        }
-    }
     
     /* end homepage */
 
-    /* --------------------------------FORM PAGE */
-
-    #map-tile{
-        margin: 1rem 0;
+    #about {
+        padding: 4px 30px;
     }
-
-    .formcontainer {
-        background-color: rgb(218, 218, 218);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .open {
+        height: 16rem !important;
+        margin-bottom: 1rem;
     }
-    .formcontainer h4 {
-        color: rgb(22, 22, 22);
-        font-size: larger;
-        text-align: center;
-        margin: 1rem 0;
-        letter-spacing: 1.8px;
-    }
-    label {
-        color: rgb(22, 22, 22);
-        text-align: center;
-    }
-    input {
-        margin: 10px auto;
-        width: 360px;
-    }
-    .btn {
-        display: flex;
-        justify-content: center;
-        background:rgb(245, 164, 71);
-        border: none;
-        color: aliceblue;
-        letter-spacing: 1px;
-        font-weight: bold;
-        width: 100%;
-        font-size: 1em;
-    }
-    .text {
-        color: rgb(207, 0, 0);
-    }
-    /* --------------------------------END FORM PAGE */
     
     #cont {
         margin: 2rem 0 0;
@@ -1397,12 +1063,15 @@ footer {
     }
     .logo{
         position: absolute;
+        left: 18px;
         background-image: url("../image/logopixel2.png");
         width: 43px;
         height: 46px;
     }
     .nav{
-        width: 40rem;
+        position: absolute;
+        right: 10px;
+        width: 10rem;
     }
 
         .intro {
@@ -1429,33 +1098,6 @@ footer {
     
         /* end home */
 
-        .greeding {
-            position: absolute;
-            margin: 0% 30% ;
-            font-size: 1rem;
-            color: #FFF2F2;
-            font-style:italic;
-            letter-spacing: 0.4rem;
-            text-shadow:1px 2px 2px #000 ;
-        }
-        .title {
-            position: absolute;
-            margin: 80% 26% 20%;
-            font-size: .6rem;
-            color: #FFF2F2;
-            font-style:italic;
-            letter-spacing: 0.4rem;
-        }
-
-        .cake{
-            background-image: url("../image/28.jpg");
-            background-position: center;
-            background-size: 33rem;
-            overflow: hidden;
-            border: 2px solid #000;
-            width: 100%;
-            height: 33rem;
-        }
 
         /* start homepage */
         .content {
@@ -1514,32 +1156,13 @@ footer {
             font-size: 1.2rem;
         }
 
-        .open {
-            background-color: rgb(219, 219, 219);
-            width: 100%;
-            height: 30rem !important;
-            margin-bottom: 1.8rem;
-            text-align: center;
+        #about {
+            padding: 10px 20px;
         }
         .open {
-            width: 100%;
-            height: 30rem !important;
-            -webkit-animation: animateThis .4s forwards;
-            -webkit-animation-fill-mode: backwards;
+            height: 22rem !important;
+            margin-bottom: 1rem;
         }
-        
-        @-webkit-keyframes animateThis {
-            0% {
-                width: 0px;
-                height: 0px;
-            }
-            100% {
-                width: 100%;
-                height: 30rem;
-        
-            }
-        }
-    
     
     /* end homepage */
     
@@ -1610,6 +1233,7 @@ footer {
 
     .logo{
         position: absolute;
+        left: 18px;
         background-image: url("../image/logoiphone6.png");
         width: 32px;
         height: 34px;
@@ -1619,8 +1243,11 @@ footer {
         margin-top: 1%;
     }
     .nav{
-        width: 40rem;
+        position: absolute;
+        right: 2px;
+        width: 10rem;
     }
+    
 
     .intro {
         margin-top: 3.6rem;
@@ -1645,34 +1272,7 @@ footer {
 
     /* end home */
 
-    .greeding {
-        position: absolute;
-        margin: 0% 30% ;
-        font-size: 1rem;
-        color: #FFF2F2;
-        font-style:italic;
-        letter-spacing: 0.4rem;
-        text-shadow:1px 2px 2px #000 ;
-    }
-    .title {
-        position: absolute;
-        margin: 80% 26% 20%;
-        font-size: .6rem;
-        color: #FFF2F2;
-        font-style:italic;
-        letter-spacing: 0.4rem;
-    }
-
-    .cake{
-        background-image: url("../image/28.jpg");
-        background-position: center;
-        background-size: 33rem;
-        overflow: hidden;
-        border: 2px solid #000;
-        width: 100%;
-        height: 33rem;
-    }
-
+   
     /* start homepage */
     .content {
         clear: both;
@@ -1730,75 +1330,14 @@ footer {
         font-size: 1.2rem;
     }
 
-   
 
-    .open {
-        background-color: rgb(219, 219, 219);
-        width: 100%;
-        height: 34rem !important;
-        margin-bottom: 1.8rem;
-        text-align: center;
+    #about {
+        padding: 4px 16px;
     }
     .open {
-        width: 100%;
-        height: 34rem !important;
-        -webkit-animation: animateThis .4s forwards;
-        -webkit-animation-fill-mode: backwards;
+        height: 21rem !important;
+        margin-bottom: 1rem;
     }
-    
-    @-webkit-keyframes animateThis {
-        0% {
-            width: 0px;
-            height: 0px;
-        }
-        100% {
-            width: 100%;
-            height: 34rem;
-    
-        }
-    }
-
-       /* --------------------------------FORM PAGE */
-       #map-tile{
-        margin: 1rem 0;
-    }
-
-.formcontainer {
-    background-color: rgb(218, 218, 218);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .formcontainer h4 {
-    color: rgb(22, 22, 22);
-    font-size: larger;
-    text-align: center;
-    margin: 1rem 0;
-    letter-spacing: 1.8px;
-  }
-  label {
-    color: rgb(22, 22, 22);
-    text-align: center;
-  }
-  input {
-    margin: 10px auto;
-    width: 300px;
-  }
-  .btn {
-    display: flex;
-    justify-content: center;
-    background:rgb(245, 164, 71);
-    border: none;
-    color: aliceblue;
-    letter-spacing: 1px;
-    font-weight: bold;
-    width: 100%;
-    font-size: 1em;
-  }
-  .text {
-    color: rgb(207, 0, 0);
-  }
-  /* --------------------------------END FORM PAGE */
     
   #cont {
     margin: 2rem 0 0;
@@ -1866,6 +1405,7 @@ footer {
     }
     .logo{
         position: absolute;
+        left: 14px;
         background-image: url("../image/logoiphone5.png");
         width: 30px;
         height: 32px;
@@ -1875,7 +1415,9 @@ footer {
         margin-top: 1%;
     }
     .nav{
-        width: 40rem;
+        position: absolute;
+        right: 0px;
+        width: 10rem;
     }
 
     .intro {
@@ -1900,34 +1442,6 @@ footer {
     }
 
     /* end home */
-
-    .greeding {
-        position: absolute;
-        margin: 0% 30% ;
-        font-size: 1rem;
-        color: #FFF2F2;
-        font-style:italic;
-        letter-spacing: 0.4rem;
-        text-shadow:1px 2px 2px #000 ;
-    }
-    .title {
-        position: absolute;
-        margin: 80% 26% 20%;
-        font-size: .6rem;
-        color: #FFF2F2;
-        font-style:italic;
-        letter-spacing: 0.4rem;
-    }
-
-    .cake{
-        background-image: url("../image/28.jpg");
-        background-position: center;
-        background-size: 33rem;
-        overflow: hidden;
-        border: 2px solid #000;
-        width: 100%;
-        height: 33rem;
-    }
 
 
     .menu {
@@ -1980,31 +1494,13 @@ footer {
             font-size: 1.2rem;
         }
 
-            .open {
-                background-color: rgb(219, 219, 219);
-                width: 100%;
-                height: 34rem !important;
-                margin-bottom: 1.8rem;
-                text-align: center;
-            }
-            .open {
-                width: 100%;
-                height: 34rem !important;
-                -webkit-animation: animateThis .4s forwards;
-                -webkit-animation-fill-mode: backwards;
-            }
-            
-            @-webkit-keyframes animateThis {
-                0% {
-                    width: 0px;
-                    height: 0px;
-                }
-                100% {
-                    width: 100%;
-                    height: 34rem;
-            
-                }
-            }
+        #about {
+            padding: 1px 16px;
+        }
+        .open {
+            height: 25rem !important;
+            margin-bottom: 1rem;
+        }
         
 
             .gallery {

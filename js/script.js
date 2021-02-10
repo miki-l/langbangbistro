@@ -1,7 +1,9 @@
 
 
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {
+  myFunction()
+};
 
 var header = document.getElementById("navbar");
 var sticky = header.offsetTop;
@@ -16,10 +18,24 @@ function myFunction() {
 
 
 
-$(".mng").on("click", function() {
+// $(".mng").on("click", function() {
 
-  $("#about").toggleClass('open');
-  $("#about .aboutxt ").animate({"opacity":"1"},1599);
-  $(".mng").off("click");
+//   $("#about").toggleClass('open');
+//   $("#about .aboutxt ").animate({"opacity":"1"},1599);
+//   $(".mng").off("click");
 
-});
+// });
+
+var mng = document.getElementById("mngf");
+var abt = document.getElementById("about");
+var anmt = document.getElementById("anmtabt");
+
+mng.onclick = function(){
+  if(abt.className == "open"){
+    abt.className = "";
+    anmt.setAttribute("style","opacity: 0");
+  }else{
+    abt.className = "open";
+    anmt.setAttribute("style","opacity: 1"); 
+  }
+};
