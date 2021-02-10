@@ -1,5 +1,5 @@
 
-
+window.onload = function () { };
 
 window.onscroll = function() {
   myFunction()
@@ -16,15 +16,15 @@ function myFunction() {
   }
 }
 
+var navop = document.getElementById("navop");
+var nv = document.getElementById("nv");
+
+navop.onclick = function(){
+  nv.classList.toggle('navopen');
+  navop.classList.toggle('toggle');
+};
 
 
-// $(".mng").on("click", function() {
-
-//   $("#about").toggleClass('open');
-//   $("#about .aboutxt ").animate({"opacity":"1"},1599);
-//   $(".mng").off("click");
-
-// });
 
 var mng = document.getElementById("mngf");
 var abt = document.getElementById("about");
@@ -41,10 +41,3 @@ var nvabt = document.getElementById("nvabt");
   }
 };
 
-var navop = document.getElementById("navop");
-var nv = document.getElementById("nv");
-
-navop.onclick = function(){
-  nv.classList.toggle('navopen');
-  navop.classList.toggle('toggle');
-};
