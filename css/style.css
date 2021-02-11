@@ -503,28 +503,28 @@ footer {
     }
     .line1{
         
-        transition: transform 1s;
+        transition: transform 0.4s;
     }
     .line2{
         opacity: 1;
-        transition: opacity 2s;
+        transition: opacity 1s;
     }
     .line3{
         
-        transition: transform 1s;
+        transition: transform 0.4s;
     }
     .toggle .line1 {
-        transform: rotate(-45deg) translate(-6px,5px);
-        transition: transform 1s;
-    }
-    .toggle .line2 {
+        transform: rotate(-45deg) translate(-5.8px,4.6px);
+        transition: transform 0.4s;
+      }
+      .toggle .line2 {
         opacity: 0;
         transition: opacity 0s;
-    }
-    .toggle .line3 {
-        transform: rotate(45deg) translate(-2px,-3.8px);
-        transition: transform 1s;
-    }
+      }
+      .toggle .line3 {
+        transform: rotate(45deg) translate(-4px,-3px);
+        transition: transform 0.4s;
+      }
 
 
     .des {
@@ -751,28 +751,28 @@ footer {
     }
     .line1{
         
-        transition: transform 1s;
+        transition: transform 0.4s;
     }
     .line2{
         opacity: 1;
-        transition: opacity 2s;
+        transition: opacity 1s;
     }
     .line3{
         
-        transition: transform 1s;
+        transition: transform 0.4s;
     }
     .toggle .line1 {
-        transform: rotate(-45deg) translate(-6px,5px);
-        transition: transform 1s;
-    }
-    .toggle .line2 {
+        transform: rotate(-45deg) translate(-5.8px,4.6px);
+        transition: transform 0.4s;
+      }
+      .toggle .line2 {
         opacity: 0;
         transition: opacity 0s;
-    }
-    .toggle .line3 {
-        transform: rotate(45deg) translate(-2px,-3.8px);
-        transition: transform 1s;
-    }
+      }
+      .toggle .line3 {
+        transform: rotate(45deg) translate(-4px,-3px);
+        transition: transform 0.4s;
+      }
 
 
     .des {
@@ -993,31 +993,30 @@ footer {
         margin: 2px 0;
         z-index: 6;
     }
-
     .line1{
         
-        transition: transform 1s;
+        transition: transform 0.4s;
     }
     .line2{
         opacity: 1;
-        transition: opacity 2s;
+        transition: opacity 1s;
     }
     .line3{
         
-        transition: transform 1s;
+        transition: transform 0.4s;
     }
     .toggle .line1 {
-        transform: rotate(-45deg) translate(-6px,5px);
-        transition: transform 1s;
-    }
-    .toggle .line2 {
+        transform: rotate(-45deg) translate(-5.8px,4.6px);
+        transition: transform 0.4s;
+      }
+      .toggle .line2 {
         opacity: 0;
         transition: opacity 0s;
-    }
-    .toggle .line3 {
-        transform: rotate(45deg) translate(-2px,-3.8px);
-        transition: transform 1s;
-    }
+      }
+      .toggle .line3 {
+        transform: rotate(45deg) translate(-4px,-3px);
+        transition: transform 0.4s;
+      }
 
 
     .des {
@@ -1232,13 +1231,13 @@ footer {
         height: 0px;
         margin-top: 2.9em;
         overflow: hidden;
-        transition: height 1s;  
+        transition: height 0.4s;  
     }
     .navopen{
         background-color: rgb(33, 155, 108);
         height: 8em;
         margin-top: 2.9em;
-        transition: height 1s;
+        transition: height 0.4s;
     }
     .burger{
         display: flex;
@@ -1258,27 +1257,27 @@ footer {
     }
     .line1{
         
-        transition: transform 1s;
+        transition: transform 0.4s;
     }
     .line2{
         opacity: 1;
-        transition: opacity 2s;
+        transition: opacity 1s;
     }
     .line3{
         
-        transition: transform 1s;
+        transition: transform 0.4s;
     }
     .toggle .line1 {
-        transform: rotate(-45deg) translate(-6px,5px);
-        transition: transform 1s;
+        transform: rotate(-45deg) translate(-5.8px,4.6px);
+        transition: transform 0.4s;
       }
       .toggle .line2 {
         opacity: 0;
         transition: opacity 0s;
       }
       .toggle .line3 {
-        transform: rotate(45deg) translate(-2px,-3.8px);
-        transition: transform 1s;
+        transform: rotate(45deg) translate(-4px,-3px);
+        transition: transform 0.4s;
       }
 
 
@@ -1483,27 +1482,27 @@ footer {
     }
     .line1{
         
-        transition: transform 1s;
+        transition: transform 0.4s;
     }
     .line2{
         opacity: 1;
-        transition: opacity 2s;
+        transition: opacity 1s;
     }
     .line3{
         
-        transition: transform 1s;
+        transition: transform 0.4s;
     }
     .toggle .line1 {
-        transform: rotate(-45deg) translate(-6px,5px);
-        transition: transform 1s;
+        transform: rotate(-45deg) translate(-5.8px,4.6px);
+        transition: transform 0.4s;
       }
       .toggle .line2 {
         opacity: 0;
         transition: opacity 0s;
       }
       .toggle .line3 {
-        transform: rotate(45deg) translate(-2px,-3.8px);
-        transition: transform 1s;
+        transform: rotate(45deg) translate(-4px,-3px);
+        transition: transform 0.4s;
       }
     
 
@@ -1704,31 +1703,30 @@ footer {
         margin: 2px 0;
         z-index: 6;
     }
-
-.line1{
-    
-    transition: transform 1s;
-}
-.line2{
-    opacity: 1;
-    transition: opacity 2s;
-}
-.line3{
-    
-    transition: transform 1s;
-}
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-6px,5px);
-    transition: transform 1s;
-  }
-  .toggle .line2 {
-    opacity: 0;
-    transition: opacity 0s;
-  }
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-2px,-3.8px);
-    transition: transform 1s;
-  }
+    .line1{
+        
+        transition: transform 0.4s;
+    }
+    .line2{
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    .line3{
+        
+        transition: transform 0.4s;
+    }
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5.8px,4.6px);
+        transition: transform 0.4s;
+      }
+      .toggle .line2 {
+        opacity: 0;
+        transition: opacity 0s;
+      }
+      .toggle .line3 {
+        transform: rotate(45deg) translate(-4px,-3px);
+        transition: transform 0.4s;
+      }
 
 
     .intro {
