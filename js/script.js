@@ -16,13 +16,24 @@ function myFunction() {
   }
 }
 
+
+
+
 var navop = document.getElementById("navop");
 var nv = document.getElementById("nv");
+var boD = document.getElementById("bo-d")
 
 navop.onclick = function(){
+
+  header.classList.toggle('sticky');
+
   nv.classList.toggle('navopen');
   navop.classList.toggle('toggle');
+
+  boD.classList.toggle('boD');
 };
+
+
 
 
 

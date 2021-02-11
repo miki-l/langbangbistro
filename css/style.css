@@ -8,6 +8,11 @@
 body {
     background-color: rgb(230, 230, 230);
 }
+.boD{
+    height: 100vh;
+    overflow: hidden;
+    opacity: .6;
+}
 
 /* start header */
 #navbar {  
@@ -19,18 +24,7 @@ body {
 
 .sticky {
     background-color: rgb(33, 155, 108);
-    -webkit-animation: animatesticky 0s forwards;
-    -webkit-animation-fill-mode: backwards;
-}
-
-@-webkit-keyframes animatesticky {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-
-    }
+    transition: background-color 0.4s;
 }
 
   
@@ -47,7 +41,6 @@ body {
     width: 10rem;
 }
 .nav a {
-    margin-top: .8rem;
     list-style: none;
     text-decoration: none;
     font-size: 1.2rem;
@@ -58,6 +51,10 @@ body {
     cursor: pointer; 
     opacity: .8;
 } 
+
+.burger{
+    cursor: pointer;
+}
 /* end header */
 
 /* start intro */
@@ -463,7 +460,10 @@ footer {
         width: 100%;
         height: 47px;
      }
-
+     .nav a{
+         font-size: 2em;
+         letter-spacing: .2ch;
+     }
 
      .nav{
         background-color: rgb(33, 155, 108);
@@ -472,17 +472,18 @@ footer {
         align-items: center;
         position: absolute;
         right: 0px;
-        width: 8rem;
-        height: 0px;
+        width: 60%;
+        height: 94vh;
         margin-top: 2.9em;
         overflow: hidden;
-        transition: height 1s;  
+        transform: translatex(100%);
+        transition: transform 0.4s;   
     }
     .navopen{
         background-color: rgb(33, 155, 108);
-        height: 8em;
         margin-top: 2.9em;
-        transition: height 1s;
+        transform: translatex(0%);
+        transition: transform 0.4s;  
     }
     .burger{
         display: flex;
@@ -498,7 +499,7 @@ footer {
         height: 2px;
         width: 30px;
         margin: 2px 0;
-        z-index: 6;
+        z-index: 2;
     }
     .line1{
         
@@ -720,17 +721,18 @@ footer {
         align-items: center;
         position: absolute;
         right: 0px;
-        width: 8rem;
-        height: 0px;
+        width: 60%;
+        height: 96vh;
         margin-top: 2.9em;
         overflow: hidden;
-        transition: height 1s;  
+        transform: translatex(100%);
+        transition: transform 0.4s;     
     }
     .navopen{
         background-color: rgb(33, 155, 108);
-        height: 8em;
         margin-top: 2.9em;
-        transition: height 1s;
+        transform: translatex(0%);
+        transition: transform 0.4s;   
     }
     .burger{
         display: flex;
@@ -746,7 +748,7 @@ footer {
         height: 2px;
         width: 30px;
         margin: 2px 0;
-        z-index: 6;
+        z-index: 2;
     }
     .line1{
         
@@ -964,17 +966,18 @@ footer {
         align-items: center;
         position: absolute;
         right: 0px;
-        width: 8rem;
-        height: 0px;
+        width: 60%;
+        height: 94vh;
         margin-top: 2.9em;
         overflow: hidden;
-        transition: height 1s;  
+        transform: translatex(100%);
+        transition: transform 0.4s;   
     }
     .navopen{
         background-color: rgb(33, 155, 108);
-        height: 8em;
         margin-top: 2.9em;
-        transition: height 1s;
+        transform: translatex(0%);
+        transition: transform 0.4s;  
     }
     .burger{
         display: flex;
@@ -990,7 +993,7 @@ footer {
         height: 2px;
         width: 30px;
         margin: 2px 0;
-        z-index: 6;
+        z-index: 2;
     }
     .line1{
         
@@ -1226,17 +1229,19 @@ footer {
         align-items: center;
         position: absolute;
         right: 0px;
-        width: 8rem;
-        height: 0px;
+        height: 94vh;
+        width: 60%;
         margin-top: 2.9em;
         overflow: hidden;
-        transition: height 0.4s;  
+        transform: translatex(100%);
+        transition: transform 0.4s;  
     }
     .navopen{
+        transform: translatex(0%);
         background-color: rgb(33, 155, 108);
-        height: 8em;
+        width: 50%;
         margin-top: 2.9em;
-        transition: height 0.4s;
+        transition: transform 0.4s;
     }
     .burger{
         display: flex;
@@ -1252,7 +1257,7 @@ footer {
         height: 2px;
         width: 30px;
         margin: 2px 0;
-        z-index: 6;
+        z-index: 2;
     }
     .line1{
         
@@ -1451,17 +1456,18 @@ footer {
         align-items: center;
         position: absolute;
         right: 0px;
-        width: 8rem;
-        height: 0px;
+        height: 94vh;
+        width: 60%;
         margin-top: 2em;
         overflow: hidden;
-        transition: height 1s;  
+        transform: translatex(100%);
+        transition: transform 0.4s;   
     }
     .navopen{
+        transform: translatex(0%);
         background-color: rgb(33, 155, 108);
-        height: 8em;
         margin-top: 2em;
-        transition: height 1s;
+        transition: transform 0.4s;
     }
     .burger{
         display: flex;
@@ -1477,7 +1483,7 @@ footer {
         height: 2px;
         width: 30px;
         margin: 2px 0;
-        z-index: 6;
+        z-index: 2;
     }
     .line1{
         
@@ -1674,17 +1680,18 @@ footer {
         align-items: center;
         position: absolute;
         right: 0px;
-        width: 8rem;
-        height: 0px;
+        width: 60%;
+        height: 95vh;
         margin-top: 2em;
         overflow: hidden;
-        transition: height 1s;  
+        transform: translatex(100%);
+        transition: transform 0.4s;   
     }
     .navopen{
         background-color: rgb(33, 155, 108);
-        height: 8em;
         margin-top: 2em;
-        transition: height 1s;
+        transform: translatex(0%);
+        transition: transform 0.4s;
     }
     .burger{
         display: flex;
@@ -1700,7 +1707,7 @@ footer {
         height: 2px;
         width: 30px;
         margin: 2px 0;
-        z-index: 6;
+        z-index: 2;
     }
     .line1{
         
