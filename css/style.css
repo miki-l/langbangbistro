@@ -1239,7 +1239,6 @@ footer {
     .navopen{
         transform: translatex(0%);
         background-color: rgb(33, 155, 108);
-        width: 50%;
         margin-top: 2.9em;
         transition: transform 0.4s;
     }
