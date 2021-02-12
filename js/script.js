@@ -1,37 +1,112 @@
 
-window.onload = function () { };
-
-window.onscroll = function() {
-  myFunction()
-};
-
-var header = document.getElementById("navbar");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-
-
 
 var navop = document.getElementById("navop");
 var nv = document.getElementById("nv");
-var boD = document.getElementById("bo-d")
+var boD = document.getElementById("bo-d");
+var mboD = document.getElementById("mbo-d");
 
-navop.onclick = function(){
+var contact = document.getElementById("cntac");
 
-  header.classList.toggle('sticky');
 
-  nv.classList.toggle('navopen');
-  navop.classList.toggle('toggle');
+// nav
+function navfunction() {
 
-  boD.classList.toggle('boD');
+  navop.onclick = function(){
+
+    nv.classList.toggle('navopen');
+    navop.classList.toggle('toggle');
+    try{
+      boD.classList.toggle('boD');
+    }catch(e){
+
+    }finally{
+      mboD.classList.toggle('mboD');
+    }
+    
+    
+  };
+}
+navfunction();
+// end nav
+
+
+
+
+// background nav onclick
+function boDfunction() {
+  
+  boD.onclick = function() {
+  nv.classList.remove('navopen');
+  navop.classList.remove('toggle');
+
+  boD.classList.remove('boD');
 };
+}
+
+function mboDfunction() {
+
+  mboD.onclick = function() {
+  nv.classList.remove('navopen');
+  navop.classList.remove('toggle');
+
+  mboD.classList.remove('mboD');
+};
+}
+
+try {
+  boDfunction();
+  contfunction(); 
+} catch (error) {
+  
+}
+finally{
+  mboDfunction();
+  mcontfunction(); 
+}
+// end background nav onclick
+
+
+// contact 
+function contfunction(){
+
+  contact.onclick = function() {
+    nv.classList.remove('navopen');
+    navop.classList.remove('toggle');
+
+    boD.classList.remove('boD');
+  };
+
+}
+
+
+function mcontfunction(){
+
+  contact.onclick = function() {
+    nv.classList.remove('navopen');
+    navop.classList.remove('toggle');
+
+    mboD.classList.remove('mboD');
+  };
+
+}
+// end of contact
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -42,7 +117,8 @@ var abt = document.getElementById("about");
 var anmt = document.getElementById("anmtabt");
 var nvabt = document.getElementById("nvabt");
 
-(nvabt,mng).onclick = function(){
+
+mng.onclick = function() {
   if(abt.className == "open"){
     abt.className = "";
     anmt.setAttribute("style","opacity: 0");
@@ -51,4 +127,3 @@ var nvabt = document.getElementById("nvabt");
     anmt.setAttribute("style","opacity: 1"); 
   }
 };
-
