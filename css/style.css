@@ -489,7 +489,7 @@ footer {
         transition: transform 0.4s;   
     }
     .navopen{
-        background-color: rgb(33, 155, 108);
+        background-color: rgb(37, 175, 83);
         margin-top: 2.9em;
         transform: translatex(0%);
         transition: transform 0.4s;  
@@ -738,7 +738,7 @@ footer {
         transition: transform 0.4s;     
     }
     .navopen{
-        background-color: rgb(33, 155, 108);
+        background-color: rgb(37, 175, 83);
         margin-top: 2.9em;
         transform: translatex(0%);
         transition: transform 0.4s;   
@@ -983,7 +983,7 @@ footer {
         transition: transform 0.4s;   
     }
     .navopen{
-        background-color: rgb(33, 155, 108);
+        background-color: rgb(37, 175, 83);
         margin-top: 2.9em;
         transform: translatex(0%);
         transition: transform 0.4s;  
@@ -1247,7 +1247,7 @@ footer {
     }
     .navopen{
         transform: translatex(0%);
-        background-color: rgb(33, 155, 108);
+        background-color: rgb(37, 175, 83);
         margin-top: 2.9em;
         transition: transform 0.4s;
     }
@@ -1473,7 +1473,7 @@ footer {
     }
     .navopen{
         transform: translatex(0%);
-        background-color: rgb(33, 155, 108);
+        background-color: rgb(37, 175, 83);
         margin-top: 2em;
         transition: transform 0.4s;
     }
@@ -1696,7 +1696,7 @@ footer {
         transition: transform 0.4s;   
     }
     .navopen{
-        background-color: rgb(33, 155, 108);
+        background-color: rgb(37, 175, 83);
         margin-top: 2em;
         transform: translatex(0%);
         transition: transform 0.4s;
