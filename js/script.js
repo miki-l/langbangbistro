@@ -8,6 +8,25 @@ var mboD = document.getElementById("mbo-d");
 var contact = document.getElementById("cntac");
 
 
+var mng = document.getElementById("mngf");
+var abt = document.getElementById("about");
+var anmt = document.getElementById("anmtabt");
+var nvabt = document.getElementById("nvabt");
+
+function abtfunction() {
+  mng.onclick = function() {
+    if(abt.className == "open"){
+      abt.className = "";
+      anmt.setAttribute("style","opacity: 0");
+    }else{
+      abt.className = "open";
+      anmt.setAttribute("style","opacity: 1"); 
+    }
+  };
+  
+}
+
+
 // nav
 function navfunction() {
 
@@ -27,6 +46,8 @@ function navfunction() {
   };
 }
 navfunction();
+
+
 // end nav
 
 
@@ -54,6 +75,7 @@ function mboDfunction() {
 }
 
 try {
+  abtfunction();
   boDfunction();
   contfunction(); 
 } catch (error) {
@@ -94,36 +116,3 @@ function mcontfunction(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var mng = document.getElementById("mngf");
-var abt = document.getElementById("about");
-var anmt = document.getElementById("anmtabt");
-var nvabt = document.getElementById("nvabt");
-
-
-mng.onclick = function() {
-  if(abt.className == "open"){
-    abt.className = "";
-    anmt.setAttribute("style","opacity: 0");
-  }else{
-    abt.className = "open";
-    anmt.setAttribute("style","opacity: 1"); 
-  }
-};
