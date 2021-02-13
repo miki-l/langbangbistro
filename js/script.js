@@ -1,4 +1,4 @@
-
+var prv =  document.getElementById("prv");
 
 var navop = document.getElementById("navop");
 var nv = document.getElementById("nv");
@@ -24,6 +24,18 @@ function abtfunction() {
     }
   };
   
+}
+
+function prvfunction() {
+
+  prv.onclick = function(){
+
+    alert(
+      "privacy policy will be provided to you when our site start using cookies"
+    )
+    
+    
+  };
 }
 
 
@@ -75,6 +87,7 @@ function mboDfunction() {
 }
 
 try {
+  prvfunction();
   abtfunction();
   boDfunction();
   contfunction(); 
@@ -82,6 +95,7 @@ try {
   
 }
 finally{
+  prvfunction();
   mboDfunction();
   mcontfunction(); 
 }
