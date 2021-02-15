@@ -14,25 +14,11 @@
    id="svg8"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
    sodipodi:docname="drawing.svg"
-   inkscape:export-filename="C:\xampp\htdocs\rapp\image\logoiphone6.png"
-   inkscape:export-xdpi="126.66083"
-   inkscape:export-ydpi="126.66083">
+   inkscape:export-filename="C:\langbangbistro\image\logoiphone5.png"
+   inkscape:export-xdpi="118.74452"
+   inkscape:export-ydpi="118.74452">
   <defs
-     id="defs2">
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter1236"
-       x="-0.088229091"
-       width="1.1764582"
-       y="-0.081826376"
-       height="1.1636528">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.25024858"
-         id="feGaussianBlur1238" />
-    </filter>
-  </defs>
+     id="defs2" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -40,7 +26,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.5912224"
+     inkscape:zoom="7.2817481"
      inkscape:cx="20.976409"
      inkscape:cy="3.7212393"
      inkscape:document-units="mm"
@@ -55,7 +41,7 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1920"
-     inkscape:window-height="986"
+     inkscape:window-height="1000"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1" />
@@ -67,7 +53,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -138,29 +124,9 @@
        id="g1031"
        style="fill:#ff7f2a;fill-opacity:1"
        transform="translate(-14.603763,-0.69707701)" />
-    <g
-       id="g1071"
-       style="fill:#000000;filter:url(#filter1236)"
-       transform="matrix(0.8010114,0,0,0.8010114,22.710538,31.158042)"
-       inkscape:export-filename="C:\xampp\htdocs\rapp\image\g1062.png"
-       inkscape:export-xdpi="169.44057"
-       inkscape:export-ydpi="169.44057">
-      <path
-         id="path1069"
-         style="fill:#000000;fill-opacity:1;stroke-width:0.659284"
-         d="m 229.04328,139.08652 h 1.03812 v 5.11488 h -1.03812 z m -2.33724,0 h 3.37535 v 0.99672 h -3.37535 z m 0,6.34317 h 3.37535 v 0.99672 h -3.37535 z m 0,-6.34317 h 1.03812 v 6.34317 h -1.03812 z m 4.57293,0.69753 v 1.50357 h 1.13252 c 0.64721,0 0.97089,-0.25082 0.97089,-0.75198 0,-0.50116 -0.32368,-0.75159 -0.97089,-0.75159 z m 0,2.19333 v 1.5343 h 1.26341 c 0.32361,0 0.56505,-0.0671 0.72429,-0.20146 0.16437,-0.13433 0.24661,-0.32286 0.24661,-0.5657 0,-0.24282 -0.0822,-0.43135 -0.24661,-0.56568 -0.15924,-0.13432 -0.40067,-0.20146 -0.72429,-0.20146 z" />
-    </g>
-    <g
-       id="g1062"
-       style="fill:#ffffff"
-       transform="matrix(0.8010114,0,0,0.8010114,22.343077,30.690578)"
-       inkscape:export-filename="C:\xampp\htdocs\rapp\image\g1062.png"
-       inkscape:export-xdpi="139.74788"
-       inkscape:export-ydpi="139.74788">
-      <path
-         id="rect1060"
-         style="fill:#ffffff;fill-opacity:1;stroke-width:0.659284"
-         d="m 229.04328,139.08652 h 1.03812 v 5.11488 h -1.03812 z m -2.33724,0 h 3.37535 v 0.99672 h -3.37535 z m 0,6.34317 h 3.37535 v 0.99672 h -3.37535 z m 0,-6.34317 h 1.03812 v 6.34317 h -1.03812 z m 4.57293,0.69753 v 1.50357 h 1.13252 c 0.64721,0 0.97089,-0.25082 0.97089,-0.75198 0,-0.50116 -0.32368,-0.75159 -0.97089,-0.75159 z m 0,2.19333 v 1.5343 h 1.26341 c 0.32361,0 0.56505,-0.0671 0.72429,-0.20146 0.16437,-0.13433 0.24661,-0.32286 0.24661,-0.5657 0,-0.24282 -0.0822,-0.43135 -0.24661,-0.56568 -0.15924,-0.13432 -0.40067,-0.20146 -0.72429,-0.20146 z" />
-    </g>
+    <path
+       id="rect1060"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.528094"
+       d="m 205.80936,142.10047 h 0.83154 v 4.09707 h -0.83154 z m -1.87216,0 h 2.70369 v 0.79838 h -2.70369 z m 0,5.08095 h 2.70369 v 0.79838 h -2.70369 z m 0,-5.08095 h 0.83155 v 5.08095 h -0.83155 z m 3.66297,0.55873 v 1.20437 h 0.90716 c 0.51842,0 0.77769,-0.20091 0.77769,-0.60234 0,-0.40144 -0.25927,-0.60203 -0.77769,-0.60203 z m 0,1.75688 v 1.22899 h 1.012 c 0.25922,0 0.45262,-0.0538 0.58017,-0.16137 0.13166,-0.1076 0.19754,-0.25862 0.19754,-0.45313 0,-0.19451 -0.0659,-0.34552 -0.19754,-0.45312 -0.12755,-0.10759 -0.32094,-0.16137 -0.58017,-0.16137 z" />
   </g>
 </svg>
