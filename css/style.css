@@ -65,31 +65,6 @@ body {
 }
 /* end header */
 
-/* start intro */
-
-.intro {
-    margin-top: 4.5rem;
-    display: flex;
-    flex-flow: column;
-    justify-items: center;
-}
-.greeding {
-    font-size: 4rem;
-    color: #FFF2F2;
-    font-style:italic;
-    letter-spacing: 0.4rem;
-    text-shadow:1px 2px 2px #000 ;
-}
-.title {
-    align-self: center;
-    color: #ffffff;
-    margin: 3.4rem;
-    font-style:italic;
-    text-shadow:1px 2px 2px #000 ;
-    letter-spacing: 0.4rem;
-}
-/* end intro */
-
 /* start Homepage */
 
 .des {
@@ -227,7 +202,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     background-color: rgb(212, 212, 212);
-    height: 40em;
+    height: 90vh;
     padding-bottom: 4em;
     letter-spacing: .2ch;
     font-size: .8em;
@@ -420,6 +395,30 @@ footer {
 #cont a:hover {
     opacity: .8;
 }
+
+
+.menupg{
+    font-size: .8em;
+}
+
+
+/* time and adress */
+
+.linfo{
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    padding: 2em;
+    font-size: 1em;
+}
+.address{
+    padding-right: 15.4em;
+    border-right: 2px solid #fff;
+}
+
+/* time and adress */
+
   /* end homepage */
 
 
@@ -429,20 +428,19 @@ footer {
   width: 100%;
   bottom: 0%;
   position: relative;
-  height: 4.4rem;
+  height: 2.8rem;
   background-color: #222222;
 }
   .footer-content {
       display:flex;
       justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
       font-size: .8rem;
       color: #ffffff;
   }
-  .address, .info {
+  .info {
       margin-top: .2rem;
-  }
-  .address p {
-      margin-bottom: 4px;
   }
   .info p {
       margin-bottom: 4px;
@@ -550,22 +548,7 @@ footer {
         color: rgb(226, 226, 226);
         font-size: large;
     }
-    .des2 {
-        background-image: url("../image/11.jpg");
-        background-position: bottom;
-        background-size: 64rem;
-        overflow: hidden;
-        width: 100%;
-        height: 40rem;
-        overflow: hidden;
-    }
-    .des2info a {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 13em;
-        color: rgb(226, 226, 226);
-        font-size: large;
-    }
+    
     
    
 
@@ -672,6 +655,28 @@ footer {
 .email span {
     font-size: 1.4rem;
 }
+
+.menupg{
+    font-size: 1.9em;
+}
+
+
+        /* time and adress */
+
+        .linfo{
+            background-color: rgb(218, 218, 218);
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 2rem;
+            padding: 2em;
+            font-size: 1.4em;
+        }
+        .address{
+            padding-right: 10em;
+            border-right: 2px solid #fff;
+        }
+
+        /* time and adress */
     
     /* end homepage */
 
@@ -682,20 +687,19 @@ footer {
     width: 100%;
     bottom: 0%;
     position: relative;
-    height: 8rem;
+    height: 5rem;
     background-color: #222222;
 }
     .footer-content {
         display:flex;
         justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
         font-size: 1.4rem;
         color: #ffffff;
     }
-    .address, .info {
+    .info {
         margin-top: .4rem;
-    }
-    .address p {
-        margin-bottom: 4px;
     }
     .info p {
         margin-bottom: 4px;
@@ -799,22 +803,7 @@ footer {
         color: rgb(226, 226, 226);
         font-size: large;
     }
-    .des2 {
-        background-image: url("../image/11.jpg");
-        background-position: bottom;
-        background-size: 48rem;
-        overflow: hidden;
-        width: 100%;
-        height: 20rem;
-        overflow: hidden;
-    }
-    .des2info a {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 13em;
-        color: rgb(226, 226, 226);
-        font-size: large;
-    }
+    
     
    
 
@@ -916,6 +905,13 @@ footer {
 .email span {
     font-size: 1.6rem;
 }
+
+.menupg{
+    font-size: 1.4em;
+}
+
+        
+
     
     /* end homepage */
 
@@ -926,12 +922,14 @@ footer {
     width: 100%;
     bottom: 0%;
     position: relative;
-    height: 4.6rem;
+    height: 4rem;
     background-color: #222222;
 }
     .footer-content {
         display:flex;
         justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
         font-size: 1rem;
         color: #ffffff;
     }
@@ -1147,6 +1145,23 @@ footer {
         color: rgb(255, 255, 255);
         font-size: 1.2rem;
     }
+
+
+    /* time and adress */
+
+.linfo{
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    padding: 2em;
+}
+.address{
+    padding-right: 2.8em;
+    border-right: 2px solid #fff;
+}
+
+/* time and adress */
     
     /* end homepage */
 
@@ -1191,20 +1206,19 @@ footer {
     width: 100%;
     bottom: 0%;
     position: relative;
-    height: 4.6rem;
+    height: 3.6rem;
     background-color: #222222;
     }   
     .footer-content {
         display:flex;
         justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
         font-size: 1rem;
         color: #ffffff;
     }
-    .address, .info {
+    .info {
         margin-top: .2em;
-    }
-    .address p {
-        margin-bottom: 4px;
     }
     .info p {
         margin-bottom: 4px;
@@ -1380,6 +1394,22 @@ footer {
             height: 24rem !important;
             margin-bottom: 1rem;
         }
+
+        /* time and adress */
+
+        .linfo{
+            background-color: rgb(218, 218, 218);
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 2rem;
+            padding: 2em;
+        }
+        .address{
+            padding-right: 2.8em;
+            border-right: 2px solid #fff;
+        }
+
+        /* time and adress */
     
     /* end homepage */
     
@@ -1416,26 +1446,33 @@ footer {
         width: 100%;
         bottom: 0%;
         position: relative;
-        height: 4.8rem;
+        height: 3rem;
         background-color: #222222;
+        text-align: center;
         }
         .footer-content {
             display:flex;
             justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
             font-size: .8rem;
             color: #ffffff;
+            text-align: start;
         }
-        .address, .info {
+        .info {
             margin-top: .4em;
-        }
-        .address p {
-            margin-bottom: 4px;
         }
         .info p {
             margin-bottom: 4px;
         }
         .info a{
             color: #ffffff;
+        }
+
+        .crght{
+            color: #fff;
+            margin-top: 5px;
+            font-size: 1em;
         }
         /* End footer */
 }
@@ -1534,10 +1571,18 @@ footer {
         font-size: large;
     }
 
-    .des2 {
-        height: 22rem;
-        overflow: hidden;
+    .linfo{
+        background-color: rgb(218, 218, 218);
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        padding: 2em;
     }
+    .address{
+        padding-right: 2.8em;
+        border-right: 2px solid #fff;
+    }
+
 
     /* end home */
 
@@ -1642,23 +1687,19 @@ footer {
             width: 100%;
             bottom: 0%;
             position: relative;
-            height: 4rem;
+            height: 3rem;
             background-color: #222222;
         }
         .footer-content {
             display:flex;
             justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
             font-size: .8rem;
             color: #ffffff;
         }
-        .address, .info {
+        .info {
             margin-top: .6em;
-        }
-        .address p {
-            margin-bottom: 4px;
-        }
-        .info p {
-            margin-bottom: 4px;
         }
         .info a{
             color: #ffffff;
@@ -1824,17 +1865,21 @@ footer {
             margin-bottom: 1rem;
         }
         
+/* time and adress */
 
-            .gallery {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(60px,1fr));
-                grid-column-gap: 2px;
-                grid-row-gap: 2px;
-                padding: 2px;
-            }
-            .gcontainer{
-                font-size: 8px;
-            }
+.linfo{
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    padding: 2em;
+}
+.address{
+    padding-right: 2.8em;
+    border-right: 2px solid #fff;
+}
+
+/* time and adress */
 
   #cont {
     margin: 2rem 0 0;
@@ -1862,28 +1907,32 @@ footer {
     font-size: 1rem;
 }
         
+
+
+.menupg{
+    font-size: .8em;
+}
         /* start footer */
         footer {
             margin-top: 2rem;
             width: 100%;
             bottom: 0%;
             position: relative;
-            height: 4.8rem;
+            height: 3rem;
             background-color: #222222;
         }
         .footer-content {
             display:flex;
             justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
             font-size: .8rem;
             color: #ffffff;
         }
-        .address, .info {
-            margin-top: .6em;
+        .info {
+            margin-top: .2em;
         }
         .address p {
-            margin-bottom: 4px;
-        }
-        .info p {
             margin-bottom: 4px;
         }
         .info a{
