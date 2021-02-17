@@ -26,18 +26,6 @@ function abtfunction() {
   
 }
 
-function prvfunction() {
-
-  prv.onclick = function(){
-
-    alert(
-      "privacy policy will be provided to you when our site start using cookies"
-    )
-    
-    
-  };
-}
-
 
 // nav
 function navfunction() {
@@ -87,7 +75,6 @@ function mboDfunction() {
 }
 
 try {
-  prvfunction();
   abtfunction();
   boDfunction();
   contfunction(); 
@@ -95,7 +82,6 @@ try {
   
 }
 finally{
-  prvfunction();
   mboDfunction();
   mcontfunction(); 
 }
