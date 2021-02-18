@@ -1,9 +1,7 @@
-var prv =  document.getElementById("prv");
+
 
 var navop = document.getElementById("navop");
 var nv = document.getElementById("nv");
-var boD = document.getElementById("bo-d");
-var mboD = document.getElementById("mbo-d");
 
 var contact = document.getElementById("cntac");
 
@@ -34,15 +32,6 @@ function navfunction() {
 
     nv.classList.toggle('navopen');
     navop.classList.toggle('toggle');
-    try{
-      boD.classList.toggle('boD');
-    }catch(e){
-
-    }finally{
-      mboD.classList.toggle('mboD');
-    }
-    
-    
   };
 }
 navfunction();
@@ -50,52 +39,12 @@ navfunction();
 
 // end nav
 
-
-
-
-// background nav onclick
-function boDfunction() {
-  
-  boD.onclick = function() {
-  nv.classList.remove('navopen');
-  navop.classList.remove('toggle');
-
-  boD.classList.remove('boD');
-};
-}
-
-function mboDfunction() {
-
-  mboD.onclick = function() {
-  nv.classList.remove('navopen');
-  navop.classList.remove('toggle');
-
-  mboD.classList.remove('mboD');
-};
-}
-
-try {
-  abtfunction();
-  boDfunction();
-  contfunction(); 
-} catch (error) {
-  
-}
-finally{
-  mboDfunction();
-  mcontfunction(); 
-}
-// end background nav onclick
-
-
 // contact 
 function contfunction(){
 
   contact.onclick = function() {
     nv.classList.remove('navopen');
     navop.classList.remove('toggle');
-
-    boD.classList.remove('boD');
   };
 
 }
@@ -106,12 +55,23 @@ function mcontfunction(){
   contact.onclick = function() {
     nv.classList.remove('navopen');
     navop.classList.remove('toggle');
-
-    mboD.classList.remove('mboD');
   };
 
 }
 // end of contact
+
+
+try {
+  contfunction(); 
+} catch (error) {
+  
+}
+finally{
+  mcontfunction(); 
+}
+
+
+
 
 
 

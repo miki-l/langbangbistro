@@ -472,7 +472,7 @@ footer {
         align-items: center;
         position: absolute;
         right: 0px;
-        width: 60%;
+        width: 100%;
         height: 98vh;
         margin-top: 2.9em;
         overflow: hidden;
@@ -735,7 +735,7 @@ footer {
         align-items: center;
         position: absolute;
         right: 0px;
-        width: 60%;
+        width: 100%;
         height: 96vh;
         margin-top: 2.9em;
         overflow: hidden;
@@ -978,7 +978,7 @@ footer {
         align-items: center;
         position: absolute;
         right: 0px;
-        width: 60%;
+        width: 100%;
         height: 94vh;
         margin-top: 2.9em;
         overflow: hidden;
@@ -1258,7 +1258,7 @@ footer {
         position: absolute;
         right: 0px;
         height: 94vh;
-        width: 60%;
+        width: 100%;
         margin-top: 2.9em;
         overflow: hidden;
         transform: translatex(100%);
@@ -1507,7 +1507,7 @@ footer {
         position: absolute;
         right: 0px;
         height: 94vh;
-        width: 60%;
+        width: 100%;
         margin-top: 2em;
         overflow: hidden;
         transform: translatex(100%);
@@ -1734,7 +1734,7 @@ footer {
         align-items: center;
         position: absolute;
         right: 0px;
-        width: 60%;
+        width: 100%;
         height: 95vh;
         margin-top: 2em;
         overflow: hidden;
