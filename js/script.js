@@ -25,6 +25,7 @@ function abtfunction() {
 }
 
 
+
 // nav
 function navfunction() {
 
@@ -34,7 +35,15 @@ function navfunction() {
     navop.classList.toggle('toggle');
   };
 }
-navfunction();
+try {
+  abtfunction()
+} catch (error) {
+  
+}
+finally{
+  navfunction();
+
+}
 
 
 // end nav

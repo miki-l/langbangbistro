@@ -1269,6 +1269,7 @@ footer {
         background-color: rgb(37, 175, 83);
         margin-top: 2.9em;
         transition: transform 0.4s;
+        
     }
     .burger{
         display: flex;
